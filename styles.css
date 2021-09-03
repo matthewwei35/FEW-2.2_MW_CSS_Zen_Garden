@@ -55,6 +55,10 @@ footer a {
   width: fit-content;
 }
 
+#zen-summary {
+  margin-bottom: 3rem;
+}
+
 .summary > p > a {
   color: #fff;
   background-color: #129eda;
