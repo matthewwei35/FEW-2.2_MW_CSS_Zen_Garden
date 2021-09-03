@@ -14,13 +14,14 @@ h2, h3 {
 p {
   color: #333333;
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 330;
   line-height: 2rem;
 }
 
 a {
   text-decoration: none;
   color: #129eda;
+  font-weight: 350;
 }
 
 a:hover {
@@ -37,12 +38,17 @@ footer {
   justify-content: space-around;
 }
 
+footer a {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.317);
+}
+
 .summary > p > a {
   color: #fff;
   background-color: #129eda;
 	margin: 1em;
 	padding: 1em;
   border-radius: 5%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.317);
 }
 
 .summary > p > a:hover {
@@ -58,7 +64,7 @@ footer > a {
   background-color: #129eda;
 	width: 100px;
 	height: 50px;
-	margin: 1em;
+	margin: 2em;
 	padding: 1em;
   border-radius: 5%;
   font-size: 2em;
@@ -70,9 +76,49 @@ footer > a:hover {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper ul {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.wrapper ul > li {
+	display: flex;
+  flex-direction: column;
+	border: 1px solid;
+	padding: 10px;
+	font-size: 1.25em;
+	margin: 10px 10px 10px 0px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.317);
+}
+
+.design-archives ul {
+  grid-template-columns: 1fr;
+  width: 300px;
+}
+
+.design-archives ul .next {
+  background-color: #129eda;
+  border: none;
+}
+
+.design-archives ul .next:hover {
+  background-color: #046d9b;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.design-archives ul .next a {
+  color: #fff;
+}
+
 .sidebar h3 {
   color: #2f2f2f;
-  font-size: 1rem;
+  font-size: 1.5em;
   font-weight: bold;
   text-transform: uppercase;
 }
